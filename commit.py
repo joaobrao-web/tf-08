@@ -40,3 +40,11 @@ class Repositorio:
             total += 1
             atual = atual.pai
         return total
+
+repositorio = Repositorio("tfluan", "João Brão - 6326200")
+repositorio.log()
+repositorio.commitar("sbtech")
+repositorio.commitar("aws")
+repositorio.commitar("money")
+repositorio.log()
+print(repositorio.total_de_commits())
